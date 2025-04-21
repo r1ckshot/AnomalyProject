@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_16ffaw7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.21.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.4.0">
+  <bpmn:collaboration id="Collaboration_1cq67kg">
+    <bpmn:participant id="Participant_1cgah0h" name="Raspberry Pi" processRef="Process_1v786el" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1v786el" isExecutable="true">
+    <bpmn:task id="Activity_1svnf7c" name="Nagranie dźwięku">
+      <bpmn:incoming>Flow_1wzej84</bpmn:incoming>
+      <bpmn:outgoing>Flow_07gxckf</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_170cjq0" name="Przesłanie do chmury">
+      <bpmn:incoming>Flow_07gxckf</bpmn:incoming>
+      <bpmn:outgoing>Flow_10y3gjq</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_07gxckf" sourceRef="Activity_1svnf7c" targetRef="Activity_170cjq0" />
+    <bpmn:startEvent id="Event_0vhprga">
+      <bpmn:outgoing>Flow_1wzej84</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1oyit0c" />
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_1wzej84" sourceRef="Event_0vhprga" targetRef="Activity_1svnf7c" />
+    <bpmn:task id="Activity_0os1zlp" name="Zapisanie ścieżki do nagrania">
+      <bpmn:incoming>Flow_10y3gjq</bpmn:incoming>
+      <bpmn:outgoing>Flow_1r0u1xk</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_0q1pwja">
+        <bpmn:targetRef>DataStoreReference_1s6pt7f</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_10y3gjq" sourceRef="Activity_170cjq0" targetRef="Activity_0os1zlp" />
+    <bpmn:endEvent id="Event_1qmuu37">
+      <bpmn:incoming>Flow_1r0u1xk</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1r0u1xk" sourceRef="Activity_0os1zlp" targetRef="Event_1qmuu37" />
+    <bpmn:dataStoreReference id="DataStoreReference_1s6pt7f" name="Baza danych" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1cq67kg">
+      <bpmndi:BPMNShape id="Participant_1cgah0h_di" bpmnElement="Participant_1cgah0h" isHorizontal="true">
+        <dc:Bounds x="129" y="100" width="681" height="230" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1svnf7c_di" bpmnElement="Activity_1svnf7c">
+        <dc:Bounds x="270" y="137" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_170cjq0_di" bpmnElement="Activity_170cjq0">
+        <dc:Bounds x="430" y="137" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0vhprga_di" bpmnElement="Event_0vhprga">
+        <dc:Bounds x="192" y="159" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0os1zlp_di" bpmnElement="Activity_0os1zlp">
+        <dc:Bounds x="590" y="137" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1qmuu37_di" bpmnElement="Event_1qmuu37">
+        <dc:Bounds x="752" y="159" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_1s6pt7f_di" bpmnElement="DataStoreReference_1s6pt7f">
+        <dc:Bounds x="525" y="255" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="518" y="312" width="64" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_07gxckf_di" bpmnElement="Flow_07gxckf">
+        <di:waypoint x="370" y="177" />
+        <di:waypoint x="430" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wzej84_di" bpmnElement="Flow_1wzej84">
+        <di:waypoint x="228" y="177" />
+        <di:waypoint x="270" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10y3gjq_di" bpmnElement="Flow_10y3gjq">
+        <di:waypoint x="530" y="177" />
+        <di:waypoint x="590" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1r0u1xk_di" bpmnElement="Flow_1r0u1xk">
+        <di:waypoint x="690" y="177" />
+        <di:waypoint x="752" y="177" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_0q1pwja_di" bpmnElement="DataOutputAssociation_0q1pwja">
+        <di:waypoint x="607" y="217" />
+        <di:waypoint x="575" y="256" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1wlyx8y" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.21.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.4.0">
+  <bpmn:collaboration id="Collaboration_0tiix05">
+    <bpmn:participant id="Participant_1rgknac" name="System" processRef="Process_1v7vji8" />
+    <bpmn:participant id="Participant_06kfvq0" name="Chmura" processRef="Process_1uv48ni" />
+    <bpmn:messageFlow id="Flow_0wa7iwp" sourceRef="Activity_1jycxdf" targetRef="Activity_1upus6n" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1v7vji8" isExecutable="true">
+    <bpmn:startEvent id="Event_1u2yfhs">
+      <bpmn:outgoing>Flow_1472sb8</bpmn:outgoing>
+      <bpmn:signalEventDefinition id="SignalEventDefinition_0mhhxe9" />
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_1jycxdf" name="Wykrycie awarii">
+      <bpmn:incoming>Flow_1472sb8</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1472sb8" sourceRef="Event_1u2yfhs" targetRef="Activity_1jycxdf" />
+    <bpmn:task id="Activity_07wswhs" name="Weryfikacja integralności danych">
+      <bpmn:outgoing>Flow_0hrl9yi</bpmn:outgoing>
+      <bpmn:property id="Property_0mlnn2w" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_05be8ao">
+        <bpmn:sourceRef>DataObjectReference_053ir7l</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0mlnn2w</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="Gateway_0rfxhnj" name="Czy dane są zintegrowane?">
+      <bpmn:incoming>Flow_0hrl9yi</bpmn:incoming>
+      <bpmn:outgoing>Flow_1i7qdiy</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1kj3xgt</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_0hrl9yi" sourceRef="Activity_07wswhs" targetRef="Gateway_0rfxhnj" />
+    <bpmn:sequenceFlow id="Flow_1i7qdiy" name="Tak" sourceRef="Gateway_0rfxhnj" targetRef="Event_05i9trr" />
+    <bpmn:sequenceFlow id="Flow_1kj3xgt" name="Nie" sourceRef="Gateway_0rfxhnj" targetRef="Event_0ipzc3v" />
+    <bpmn:endEvent id="Event_0ipzc3v">
+      <bpmn:incoming>Flow_1kj3xgt</bpmn:incoming>
+      <bpmn:errorEventDefinition id="ErrorEventDefinition_01tpczc" />
+    </bpmn:endEvent>
+    <bpmn:endEvent id="Event_05i9trr">
+      <bpmn:incoming>Flow_1i7qdiy</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Process_1uv48ni" isExecutable="false">
+    <bpmn:dataObjectReference id="DataObjectReference_053ir7l" name="Backup" dataObjectRef="DataObject_146pqnj" />
+    <bpmn:dataObject id="DataObject_146pqnj" />
+    <bpmn:task id="Activity_1upus6n" name="Przywrócenie backupu z chmury">
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_08cydnt">
+        <bpmn:targetRef>DataObjectReference_053ir7l</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0tiix05">
+      <bpmndi:BPMNShape id="Participant_1rgknac_di" bpmnElement="Participant_1rgknac" isHorizontal="true">
+        <dc:Bounds x="129" y="100" width="701" height="170" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1u2yfhs_di" bpmnElement="Event_1u2yfhs">
+        <dc:Bounds x="182" y="152" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jycxdf_di" bpmnElement="Activity_1jycxdf">
+        <dc:Bounds x="270" y="130" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07wswhs_di" bpmnElement="Activity_07wswhs">
+        <dc:Bounds x="500" y="130" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0rfxhnj_di" bpmnElement="Gateway_0rfxhnj" isMarkerVisible="true">
+        <dc:Bounds x="655" y="145" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="644" y="107.5" width="72" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0ipzc3v_di" bpmnElement="Event_0ipzc3v">
+        <dc:Bounds x="772" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_05i9trr_di" bpmnElement="Event_05i9trr">
+        <dc:Bounds x="772" y="152" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1472sb8_di" bpmnElement="Flow_1472sb8">
+        <di:waypoint x="218" y="170" />
+        <di:waypoint x="270" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hrl9yi_di" bpmnElement="Flow_0hrl9yi">
+        <di:waypoint x="600" y="170" />
+        <di:waypoint x="655" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1i7qdiy_di" bpmnElement="Flow_1i7qdiy">
+        <di:waypoint x="705" y="170" />
+        <di:waypoint x="772" y="170" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="729" y="152" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kj3xgt_di" bpmnElement="Flow_1kj3xgt">
+        <di:waypoint x="680" y="195" />
+        <di:waypoint x="680" y="230" />
+        <di:waypoint x="772" y="230" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="716" y="210" width="17" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_06kfvq0_di" bpmnElement="Participant_06kfvq0" isHorizontal="true">
+        <dc:Bounds x="129" y="290" width="361" height="150" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_053ir7l_di" bpmnElement="DataObjectReference_053ir7l">
+        <dc:Bounds x="432" y="345" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="432" y="402" width="37" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1upus6n_di" bpmnElement="Activity_1upus6n">
+        <dc:Bounds x="270" y="330" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0wa7iwp_di" bpmnElement="Flow_0wa7iwp">
+        <di:waypoint x="320" y="210" />
+        <di:waypoint x="320" y="330" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_05be8ao_di" bpmnElement="DataInputAssociation_05be8ao">
+        <di:waypoint x="450" y="345" />
+        <di:waypoint x="450" y="170" />
+        <di:waypoint x="500" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_08cydnt_di" bpmnElement="DataOutputAssociation_08cydnt">
+        <di:waypoint x="370" y="370" />
+        <di:waypoint x="432" y="370" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
