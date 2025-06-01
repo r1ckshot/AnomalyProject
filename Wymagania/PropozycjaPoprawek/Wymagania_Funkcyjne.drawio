@@ -1,0 +1,367 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Сторінка-1" id="Snd5NYeoUCiAAMdLCgKy">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="snhmZYs1huJNb6mN4-K5-1" value="Wymagania funkcyjne" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="785" y="40" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-1" target="snhmZYs1huJNb6mN4-K5-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="140" />
+              <mxPoint x="790" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-3" value="Zarządzanie użytkownikami i uwierzytelnianie" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="525" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="745" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-5" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;System umożliwia rejestrację nowych użytkowników&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="535" y="180" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="745" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-7" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;System umożliwia logowanie użytkowników z weryfikacją hasła&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="535" y="260" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="745" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-9" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;System zarządza rolami użytkowników (Administrator, Użytkownik)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="535" y="340" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-12" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;System blokuje/aktywuje konta użytkowników&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="535" y="420" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="745" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="745" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="140" />
+              <mxPoint x="940" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-24" value="Zarządzanie urządzeniami klienckimi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="965" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-26" value="System umożliwia rejestrację urządzeń klienckich przez użytkowników" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="180" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-28" value="System przechowuje dane lokalizacyjne urządzeń (GPS)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="260" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-30" value="System zarządza statusami urządzeń (aktywne/nieaktywne)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="340" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;entryX=0.086;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-32" target="snhmZYs1huJNb6mN4-K5-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="986" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-32" value="System przypisuje klucze API do urządzeń" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="420" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-40" value="Analiza audio w czasie rzeczywistym" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="400" y="600" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-42" value="System odbiera fragmenty audio z urządzeń klienckich" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="660" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-44" value="System analizuje audio przy użyciu modeli AI/ML" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="740" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-46" value="System klasyfikuje typy anomalii (strzały, krzyki, rozbite szkło, wypadki)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="820" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-48" value="System określa poziom pewności wykrycia" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="900" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-49" value="System lokalizuje zdarzenia na podstawie loalizacji urządzeń" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="980" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="810" y="620" />
+              <mxPoint x="810" y="71" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-52" value="Analiza wgranych plików audio" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="600" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-54" value="System umożliwia wgrywanie plików audio (WAV/MP3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="660" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-56" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-56" value="System analizuje wgrane pliki audio przy użyciu modeli AI/ML" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="740" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-58" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-58" value="System prezentuje wyniki analizy wgranych plików" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="820" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;entryX=0.086;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-60" target="snhmZYs1huJNb6mN4-K5-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1101" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-60" value="System przechowuje metadane audio (bez samych plików)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="900" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-62" value="System zapisuje wynik analizy tylko jeli bylo wykryto, że to była anomalia" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="775" y="660" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.96;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-62" target="snhmZYs1huJNb6mN4-K5-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.045;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-62" target="snhmZYs1huJNb6mN4-K5-52" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-67" value="System powiadomień" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1080" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-69" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-69" value="System wysyła powiadomienia przez różne kanały (email, SMS, push, webhook)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="1140" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-71" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-71" value="System umożliwia konfigurację progów pewności dla powiadomień" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="1220" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-73" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-73" value="System umożliwia konfigurację typów anomalii dla powiadomień" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="1300" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499" y="1120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="499" y="1410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-75" value="System śledzi status wysłanych powiadomień" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="1380" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;startFill=0;" parent="1" target="snhmZYs1huJNb6mN4-K5-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="640" as="sourcePoint" />
+            <mxPoint x="840" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-82" target="snhmZYs1huJNb6mN4-K5-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="1100" />
+              <mxPoint x="1000" y="640" />
+              <mxPoint x="905" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-82" value="Przeglądanie i raportowanie" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1205" y="1080" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-84" value="System prezentuje historię wykrytych anomalii" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="1140" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-86" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-86" value="System umożliwia filtrowanie anomalii (data, typ, lokalizacja)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="1220" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-88" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-88" value="System generuje raporty do eksportu (PDF/CSV)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="1300" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-91" value="System prezentuje szczegółowe statystyki administratorowi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="1460" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="1120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="1490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-98" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1221" y="1410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1221" y="1410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-98" value="System prezentuje szczegółowe statystyki administratorowi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1265" y="1380" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-102" value="Funkcje administracyjne" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1480" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-104" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-104" value="System umożliwia zarządzanie wszystkimi użytkownikami" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="170" y="1540" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-106" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-106" value="System monitoruje wydajność systemu (logi, zasoby)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="170" y="1620" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-110" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="379" y="1520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="379" y="1730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-110" value="System umożliwia konfigurację ustawień systemowych" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="170" y="1700" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snhmZYs1huJNb6mN4-K5-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;" parent="1" source="snhmZYs1huJNb6mN4-K5-102" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="1500" />
+              <mxPoint x="740" y="650" />
+              <mxPoint x="840" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
